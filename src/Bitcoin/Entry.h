@@ -26,6 +26,7 @@ public:
             TWCoinTypeMonacoin,
             TWCoinTypeQtum,
             TWCoinTypeRavencoin,
+            TWCoinTypeRavencoinClassic,
             TWCoinTypeViacoin,
             TWCoinTypeZcoin,
         };

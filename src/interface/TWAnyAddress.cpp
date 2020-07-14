@@ -113,6 +113,7 @@ TWData* _Nonnull TWAnyAddressData(struct TWAnyAddress* _Nonnull address) {
     case TWCoinTypeMonacoin:
     case TWCoinTypeQtum:
     case TWCoinTypeRavencoin:
+    case TWCoinTypeRavencoinClassic:
     case TWCoinTypeZcoin: {
         auto addr = Bitcoin::Address(string);
         data = Data(addr.bytes.begin() + 1, addr.bytes.end());

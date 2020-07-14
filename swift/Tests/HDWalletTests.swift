@@ -344,6 +344,15 @@ class HDWalletTests: XCTestCase {
         XCTAssertEqual("RHQmrg7nNFnRUwg2mH7GafhRY3ZaF6FB2x", address)
     }
 
+    func testDeriveRavencoinClassic() {
+        let ravencoinclassic = CoinType.ravencoinclassic
+        let wallet = HDWallet.test
+        let key = wallet.getKeyForCoin(coin: ravencoinclassic)
+        let address = ravencoinclassic.deriveAddress(privateKey: key)
+
+        XCTAssertEqual("RHQmrg7nNFnRUwg2mH7GafhRY3ZaF6FB2x", address)
+    }
+
     func testDeriveTerra() {
         let coin = CoinType.terra
         let key = HDWallet.test.getKeyForCoin(coin: coin)

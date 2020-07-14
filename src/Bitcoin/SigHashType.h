@@ -19,6 +19,7 @@ static const uint8_t SigHashMask = 0x1f;
 inline enum TWBitcoinSigHashType hashTypeForCoin(enum TWCoinType coinType) {
     // set fork hash type for BCH
     switch (coinType) {
+        case TWCoinTypeRavencoinClassic:
         case TWCoinTypeBitcoinCash:
             return (enum TWBitcoinSigHashType)((int)TWBitcoinSigHashTypeAll | (int)TWBitcoinSigHashTypeFork);
         case TWCoinTypeBitcoinGold:

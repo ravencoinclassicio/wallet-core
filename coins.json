@@ -1000,6 +1000,33 @@
         }
     },
     {
+        "id": "ravencoinClassic",
+        "name": "RavencoinClassic",
+        "symbol": "RVC",
+        "decimals": 8,
+        "blockchain": "Bitcoin",
+        "derivationPath": "m/44'/1175'/0'/0/0",
+        "curve": "secp256k1",
+        "publicKeyType": "secp256k1",
+        "p2pkhPrefix": 60,
+        "p2shPrefix": 122,
+        "publicKeyHasher": "sha256ripemd",
+        "base58Hasher": "sha256d",
+        "xpub": "xpub",
+        "xprv": "xprv",
+        "explorer": {
+            "url": "https://explorer.ravencoinclassic.io",
+            "txPath": "/tx/",
+            "accountPath": "/address/"
+        },
+        "info": {
+            "url": "https://ravencoinclassic.io",
+            "client": "https://github.com/trezor/blockbook",
+            "clientPublic": "",
+            "clientDocs": "https://github.com/trezor/blockbook/blob/master/docs/api.md"
+        }
+    },
+    {
         "id": "waves",
         "name": "Waves",
         "symbol": "WAVES",
